@@ -1,0 +1,87 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5,1fr);
+    gap: 50px;
+    max-width: 90%;
+    margin: 13% auto 0 auto;
+}
+
+.item{
+    width: 150px;
+    height: 120px;
+}
+
+.slika{
+    background-color: rgba(17, 114, 194, 0.582);
+    max-height: 80%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.naslov{
+    text-align: center;
+    background-color: #ddebf962;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: 1px solid #ddebf962;
+    box-shadow: 2px 5px 10px rgba(177, 177, 177, 0.523);
+    padding: 3px;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1000px){
+    .grid{
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .grid{
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width:630px){
+    .grid{
+       max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+}
